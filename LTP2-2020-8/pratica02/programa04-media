@@ -1,0 +1,4 @@
+numero1 = float(input("digite numero"))
+numero2 = int(input("digite numero:"))
+media =  (numero1 + numero2 ) / 2
+print("a media dos numeros é", media)
