@@ -1,0 +1,15 @@
+# ler todos os nomes que o usuario quiser escrever
+# Exibir todos os nomes em ordem alfabetica
+nomes = []
+
+continuar = True
+
+while continuar == True:
+  nome = input("informe um nome:")
+  nomes.append(nome)
+  print(nomes)
+  if input("deseja continuar? (Sim/Não)") == 'Sim':
+    continuar = True
+  else:
+    continuar = False
+  
