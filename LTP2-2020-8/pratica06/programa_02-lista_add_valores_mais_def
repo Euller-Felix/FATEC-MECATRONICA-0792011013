@@ -1,0 +1,19 @@
+def exibir_statatos_das_lista(valores):
+  valor_medio = sum(valores) / len(valores)
+  maior_valor = max(valores)
+  menor_valor = min(valores)
+  valores.sort()
+  print("valor médio:", valor_medio)
+  print("maior valor:", maior_valor)
+  print("menor valor:", menor_valor)
+  print("lista ordenada:", valores)
+
+def leitura_lista(lista, quantidade):
+  while len(valores) < quantidade:
+    valor = float(input("Informe um valor:"))
+    valores.append(valor)
+
+valores = []
+quantidade = int(input("Informe uma quantidade:"))
+leitura_lista(valores, quantidade)
+exibir_statatos_das_lista(valores)
