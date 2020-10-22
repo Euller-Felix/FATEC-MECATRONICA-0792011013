@@ -1,0 +1,20 @@
+gastos = {"pessoal" : 0, "trabalho" : 0, "lazer" : 0, "outros" : 0}
+
+continuar = True
+
+while continuar == True:
+  valor_do_gasto =  float(input("informe um valor: "))
+  categoria = input("informe categoria:").lower()
+  if categoria in gastos.keys():
+    gastos[categoria] += valor_do_gasto
+  else:
+    gastos["outros"] = valor_do_gasto
+  print(gastos)
+  print("Chaves:")
+  print(gastos.keys())
+  print("Valores:")
+  print(gastos.values())
+  continuar = input("Continuar?").lower() == 's'
+
+for categoria in gastos.keys():
+  print("Categoria:", categoria, "Valor:", gastos[categoria])
