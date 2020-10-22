@@ -1,0 +1,14 @@
+personagens = {"dps":[] ,"healer":[] , "suport":[] ,"tank":[]}
+
+quantidade_de_personagens =  int(input("quantos pessonagens deseja por? "))
+contador = 0
+
+while contador == quantidade_de_personagens:
+  nome = input("qual é o nome do personagem? ")
+  classe = input("informe categoria dele(a)").lower()
+  if classe in personagens.keys():
+    personagens[classe].append(nome)
+    contador += 1
+  else:
+    print("classe de personagens não existe")
+print(personagens)
